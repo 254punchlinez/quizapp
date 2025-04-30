@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Colorful Quiz Challenge</h1>
+        
+        <!-- Round indicator -->
+        <div class="round-indicator" id="round-indicator">
+            <div class="round-badge">Round</div>
+            <div class="round-number" id="round-number">1</div>
+        </div>
+        
+        <!-- Add a start screen -->
+        <div class="start-screen" id="start-screen">
+            <h2>Welcome to the Quiz!</h2>
+            <p>Test your knowledge across different categories.</p>
+            <button id="start-button" class="btn start-btn">Start Quiz</button>
+        </div>
+        
+        <div class="quiz-container" id="quiz-container" style="display: none;">
+            <div class="quiz-header">
+                <div class="category-badge" id="category-badge">General Knowledge</div>
+                <div class="timer" id="timer">Time Left: 60s</div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            
+            <h2 id="question">Question text</h2>
+            
+            <div id="answers" class="answers-container"></div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <button id="next" class="btn">Next Question</button>
+        </div>
+        
+        <div class="result" id="result">
+            <h2 id="result-message">Quiz Completed!</h2>
+            <div class="score-container">
+                <div id="score" class="score">Score: 0/0</div>
+            </div>
+            <button id="restart" class="btn restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
